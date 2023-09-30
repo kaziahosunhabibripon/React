@@ -80,6 +80,39 @@ h1 {
 .count {
   margin: 15px;
 }
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: hsla(0, 1%, 41%, 0.322);
+  box-shadow: 0 0 5px 0 hsla(0, 18%, 93%, 0.555);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form h1 {
+  padding: 10px 20px;
+}
+.form input {
+  background-color: #111;
+  outline: none;
+  border: none;
+  color: #ece5e58c;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 969px) {
   section {
     padding: 20px 0px;
@@ -87,6 +120,9 @@ h1 {
   h1 {
     font-size: 30px;
     line-height: 40px;
+  }
+  .form-wrapper {
+    width: 90%;
   }
   .card-body {
     flex: 0 0 calc(50% - 20px);
@@ -97,6 +133,9 @@ h1 {
   h1 {
     font-size: 20px;
     line-height: 30px;
+  }
+  .form-wrapper {
+    width: 90%;
   }
   .card-body {
     flex: 0 0 calc(100% - 20px);
