@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./index.css";
+import Count from "./Count";
 function App() {
   const [users, setUsers] = useState([]);
 
@@ -48,6 +49,7 @@ function App() {
             ))}
           </div>
         </div>
+        <Count />
       </section>
     </div>
   );
