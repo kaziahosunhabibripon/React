@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+  color: #111;
+  background: url("https://i.ibb.co/JFG98Yd/back2.jpg");
+}
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  margin: 40px 0px;
+  box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #111;
+  color: hsla(0, 0%, 96%, 0.425);
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
+}
+.card-body {
+  flex: 0 0 calc(33.33% -20px);
+  max-width: calc(33.33% - 20px);
+  background: hsl(0, 33%, 1%);
+  width: 100%;
+  border-radius: 10px;
+  color: rgba(240, 248, 255, 0.637);
+  padding: 20px;
+  margin: 10px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.card-body:hover {
+  background: hsla(0, 43%, 3%, 0.925);
+}
+.btn {
+  background-color: hsla(115, 76%, 33%, 0.664); /* Green */
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.733);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 50%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 25% 2%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid hsla(300, 89%, 32%, 0.548);
+}
+.btn:hover {
+  background: transparent;
+  color: whitesmoke;
+}
+@media (max-width: 969px) {
+  section {
+    padding: 20px 0px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .card-body {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .card-body {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}
