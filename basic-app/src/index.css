@@ -134,6 +134,7 @@ h1 {
   }
   .form-wrapper {
     width: 90%;
+    margin: 5%;
   }
   .card-body {
     flex: 0 0 calc(50% - 20px);
@@ -147,6 +148,7 @@ h1 {
   }
   .form-wrapper {
     width: 90%;
+    margin: 5%;
   }
   .card-body {
     flex: 0 0 calc(100% - 20px);

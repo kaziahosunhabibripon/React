@@ -8,6 +8,7 @@ const Registration = () => {
   };
   const handleSubmit = e => {
     e.preventDefault();
+    setObjData(objData);
     console.log(objData);
   };
   return (
